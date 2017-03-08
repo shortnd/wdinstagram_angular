@@ -1,10 +1,10 @@
-<h2>All of the Entries</h2>
+<h2 class="text-center">All of the Entries</h2>
 
-<a data-ui-sref="entrieNew">New Entrie</a>
+<a data-ui-sref="entrieNew" class="btn btn-primary text-white">New Entrie</a>
 
 <div data-ng-repeat="entrie in vm.entries">
   <div class="picture">
-<a data-ui-sref="entrieShow({id: entrie.id})"><img ng-src="{{entrie.photo_url}}" alt=""/></a>
-<p><a data-ui-sref="entrieEdit({id: entrie.id})">Edit</a></p>
+<a data-ui-sref="entrieShow({id: entrie.id})"><img class="img-fluid" ng-src="{{entrie.photo_url}}" alt=""/></a>
+<p class="btn btn-success"><a class="text-white" data-ui-sref="entrieEdit({id: entrie.id})">Edit</a></p>
 </div>
 </div>

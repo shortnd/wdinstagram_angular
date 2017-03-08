@@ -1,9 +1,21 @@
-<h2>Edit Entrie</h2>
+<h2 class="text-center">Edit Entrie</h2>
 
 <form>
-<input value="Photo URL" data-ng-model="vm.entrie.photo_url" />
-<input value="Taken By" data-ng-model="vm.entrie.author" />
-<textarea value="Body" data-ng-model="vm.entrie.body"></textarea>
-<button type="button" data-ng-click="vm.update()">Update</button>
-<button type="button" data-ng-click="vm.destroy()">Delete</button>
+    <div class="form-group">
+        <label>Photo URL:</label>
+        <input value="Photo URL" data-ng-model="vm.entrie.photo_url" />
+    </div>
+
+    <div class="form-group">
+        <label>Taken By:</label>
+        <input value="Taken By" data-ng-model="vm.entrie.author" />
+    </div>
+
+    <div class="form-group">
+        <label>Content:</label>
+        <textarea value="Body" data-ng-model="vm.entrie.body"></textarea>
+    </div>
+
+    <button type="button" class="btn btn-success" data-ng-click="vm.update()">Update</button>
+    <button type="button" class="btn btn-danger" data-ng-click="vm.destroy()">Delete</button>
 </form>

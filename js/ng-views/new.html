@@ -1,8 +1,17 @@
 <h2>Create Entrie</h2>
 
 <form>
-  <input placeholder="Photo URL" data-ng-model="vm.entrie.photo_url" />
-  <input placeholder="Taken By" data-ng-model="vm.entrie.author" />
-  <textarea placeholder="Body" data-ng-model="vm.entrie.body"></textarea>
-  <button type="button" data-ng-click="vm.create()">Create</button>
+  <div class="form-group">
+    <label>Photo URL:</label>
+    <input placeholder="Photo URL" data-ng-model="vm.entrie.photo_url" />
+  </div>
+  <div class="form-group">
+    <label>Taken By:</label>
+    <input placeholder="Taken By" data-ng-model="vm.entrie.author" />
+  </div>
+  <div class="form-group">
+    <label>Body</label>
+    <textarea placeholder="Body" data-ng-model="vm.entrie.body"></textarea>
+  </div>
+  <button type="button" class="btn btn-primary" data-ng-click="vm.create()">Create</button>
 </form>
