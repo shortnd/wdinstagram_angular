@@ -18,6 +18,11 @@
     "EntrieFactory",
     EntrieIndexControllerFunction
   ])
+  .controller("EntrieShowController", [
+    "EntrieFactory",
+    "$stateParams",
+    EntrieShowControllerFunction
+  ])
 
 
 function RouterFunction($stateProvider){

@@ -1,5 +1,5 @@
 <h2>All of the Entries</h2>
 
 <div data-ng-repeat="entrie in vm.entries">
-<img ng-src="{{entrie.photo_url}}" alt=""/>
+<a data-ui-sref="entrieShow({id: entrie.id})"><img ng-src="{{entrie.photo_url}}" alt=""/></a>
 </div>
