@@ -94,4 +94,9 @@ function EntrieEditControllerFunction( EntrieFactory, $stateParams, $state ){
       $state.go("entrieShow", {id: entrie.id})
     })
   }
+  this.destroy = function(){
+    this.entrie.$delete({id: $stateParams.id}, function(entrie){
+      $state.go("entrieIndex")
+    })
+  }
 }
